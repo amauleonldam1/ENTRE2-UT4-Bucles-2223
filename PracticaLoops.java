@@ -28,9 +28,11 @@ public class PracticaLoops {
      * devuelve true si termina en 7, false en otro caso. Sin if
      */
     public boolean terminaEn7(int n) {         
-        // TODO
-
-        return true;
+        n = n % 10;
+        while(n == 7){
+            return true;
+        }
+        return false;
     }
 
     /**
