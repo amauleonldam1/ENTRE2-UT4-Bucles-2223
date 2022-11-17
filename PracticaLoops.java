@@ -19,9 +19,8 @@ public class PracticaLoops {
      * 
      */
     public int obtenerAleatorio(int limite) {
-        // TODO
-
-        return 0;
+        int random = (int) (Math.random() * limite);
+        return random;
     }
 
     /**
