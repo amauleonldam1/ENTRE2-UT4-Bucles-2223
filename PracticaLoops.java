@@ -49,10 +49,20 @@ public class PracticaLoops {
      *  intercalarCeros(91002000) = 90102
      */
     public int intercalarCeros(int n) {
-        // TODO
+        int intercalado = 0;       
+        while(n != 0){
+            int numero = n % 10;
+            n = n /10;
+            if(numero != 0){
 
+                intercalado = intercalado += (numero * 10);
 
-        return 0;
+            }
+            else{
+                intercalado = intercalado * 10 + 0;
+            }
+        }
+        return intercalado;
     }
 
     /**
@@ -71,11 +81,7 @@ public class PracticaLoops {
     public void generarNumeros()   {
         // TODO
 
-        
-        
-        
     }
-    
     /**
      *  Dibuja la letra indicada (ver figura en el enunciado)
      *  Con bucles for
@@ -90,20 +96,18 @@ public class PracticaLoops {
     public void dibujarLetra(int grosor, int altura)    {
         // TODO
 
-        
-        
     }
-
+    
     /**
      *  escribe n veces el caracter  indicado en 2 posiciones
      *  en la misma línea
      *  con bucles for
      */
     private void escribirCaracter(char caracter, int n)    {
-         // TODO
-         
-         
-         
+        while(n != 0){
+            System.out.print(String.format("%2c", caracter));
+            n--;
+        }        
     }
 
 }
